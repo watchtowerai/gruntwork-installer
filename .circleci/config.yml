@@ -7,6 +7,7 @@ jobs:
   test:
     <<: *defaults
     steps:
+      - add_ssh_keys
       - checkout
       - run:
           name: run tests
